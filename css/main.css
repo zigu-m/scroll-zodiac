@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(15, 14, 20);
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.image {
+  width: 50vh;
+  margin: 10vh 5vw;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  object-fit: cover;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.image.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
